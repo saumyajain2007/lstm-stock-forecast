@@ -44,8 +44,8 @@ This makes LSTM particularly suitable for **financial time-series forecasting**,
 
 ### 1. Clone the Repository  
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/saumyajain2007/lstm-stock-forecast.git
+cd lstm-stock-forecast
 ```
 
 ### 2. Create and Activate Virtual Environment (Recommended)  
@@ -74,7 +74,7 @@ jupyter notebook
 
 ### Run Unit Tests  
 ```bash
-pytest
+pytest tests/
 ```
 This ensures data fetching, preprocessing, and model utilities are functioning correctly.  
 
