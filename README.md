@@ -7,6 +7,29 @@ The project is designed for reproducibility, leveraging **yfinance** to fetch re
 
 ---
 
+## 🧠 Theoretical Background  
+
+### Why Forecast Stock Prices?  
+Stock price forecasting is a classical **time-series prediction problem**. Financial markets are inherently noisy, but patterns such as trends and seasonality can be extracted using advanced models. Traditional statistical methods (like ARIMA) are often limited in capturing complex nonlinear dependencies. This is where **deep learning models** come in.  
+
+### What is LSTM?  
+**Long Short-Term Memory (LSTM)** is a type of **Recurrent Neural Network (RNN)** designed to model sequential data. Unlike standard RNNs, LSTMs can effectively capture **long-term dependencies** by using a gating mechanism that regulates the flow of information.  
+
+- **Forget Gate**: Decides what past information to discard.  
+- **Input Gate**: Selects which new information to store.  
+- **Cell State**: Maintains memory across long sequences.  
+- **Output Gate**: Determines the output at each time step.  
+
+This makes LSTM particularly suitable for **financial time-series forecasting**, where past prices, trends, and volatility influence future values.  
+
+### Why LSTM for Stock Price Forecasting?  
+- **Sequential Modeling**: Captures temporal dependencies in stock data.  
+- **Nonlinear Relationships**: Learns complex patterns beyond linear trends.  
+- **Robustness**: Handles noisy, volatile stock market data better than many classical methods.  
+- **Scalability**: Works with different assets, tickers, and time horizons.  
+
+---
+
 ## 🚀 Key Features  
 - **Data Acquisition**: Fetch historical stock price data for any ticker using the [yfinance](https://github.com/ranaroussi/yfinance) library.  
 - **Data Preprocessing**: Apply scaling (`MinMaxScaler`) and generate time-series sequences for model training.  
